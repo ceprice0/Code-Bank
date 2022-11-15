@@ -89,11 +89,11 @@ Public Class frmChallenge
         Dim message = "You chose " & userChoice & ". Computer chose " & computerChoice
 
         If result = 1 Then
-            MsgBox(drawMessage & message)
+            MsgBox(drawMessage & message, MsgBoxStyle.Information, "Rock-Paper-Scissors")
         ElseIf result = 2 Then
-            MsgBox(userWinsMessage & message)
+            MsgBox(userWinsMessage & message, MsgBoxStyle.Exclamation, "Rock-Paper-Scissors")
         ElseIf result = 3 Then
-            MsgBox(computerWinsMessage & message)
+            MsgBox(computerWinsMessage & message, MsgBoxStyle.Critical, "Rock-Paper-Scissors")
         End If
 
     End Sub

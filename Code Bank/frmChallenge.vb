@@ -18,7 +18,7 @@
 
     Private Sub picboxRock_Click(sender As Object, e As EventArgs) Handles picboxRock.Click
         lblChoice.Text = "You Chose Rock"
-        comp = rng.Next(3)
+        comp = rng.Next(1, 3)
         If comp = "1" Then
             comp = "Rock"
             MsgBox("Computer chose rock. Draw")
@@ -39,7 +39,7 @@
 
     Private Sub picboxPaper_Click(sender As Object, e As EventArgs) Handles picboxPaper.Click
         lblChoice.Text = "You Chose Paper"
-        comp = rng.Next(3)
+        comp = rng.Next(1, 3)
         If comp = "1" Then
             comp = "Rock"
             MsgBox("Computer chose rock. You Win")
@@ -60,7 +60,7 @@
 
     Private Sub picboxScissors_Click(sender As Object, e As EventArgs) Handles picboxScissors.Click
         lblChoice.Text = "You Chose Scissors"
-        comp = rng.Next(3)
+        comp = rng.Next(1, 3)
         If comp = "1" Then
             comp = "Rock"
             MsgBox("Computer chose rock. Lose")
